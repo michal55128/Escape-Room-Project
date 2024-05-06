@@ -14,6 +14,7 @@ if (k < 12) {
 }
 
 
+
 for (let j = 1; j <= localStorage.getItem("level") && j < 12; j++) {
     let currRoom = document.getElementById('room' + (j + 1));
     console.log(currRoom)
