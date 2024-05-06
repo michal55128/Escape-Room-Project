@@ -15,6 +15,7 @@ function prev(i) {
          row1 = 1;
       }
       else row1 = 0;
+      
    }
    if (i === 3) {
       if (squares[4].firstElementChild.src === squares[5].firstElementChild.src && squares[5].firstElementChild.src === squares[6].firstElementChild.src) {
