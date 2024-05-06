@@ -1,0 +1,111 @@
+body{
+      display: grid;
+      grid-template-columns:1fr 3fr 1fr;
+      grid-template-rows:1fr 5fr 1fr;
+      align-items: center;
+      justify-items: center;
+      width: 90%;
+      height: 95vh;
+      background-image: url("../pictures/10.png");
+      background-repeat: no-repeat;
+      justify-items: end;
+      /* background-size: 100% 100%; */
+  }
+  #door{
+    width: 100vw;
+     height: 100vh;
+     grid-column: 1/span 3;
+     grid-row: 1/span 5;
+     display: none;
+     /* z-index:-1; */
+   }
+   #arrow{
+    display: none;
+    grid-column: 2;
+	justify-items: center;
+     grid-row:2;
+   }
+ 
+#pieces{
+    display: flex;
+    grid-column: 1/span 2;
+    grid-row:1;
+    width: 33vw;
+    height: 40vh;
+   align-self: center;         
+}
+
+ #pieces img{
+    width: 40vw;
+    height: 30vh;
+    margin: 8px;
+    /* border-radius: 50%; */
+}
+
+button background-image{
+  width: 10%;
+  height: 10vh;
+  margin: 8px;
+  /* border-radius: 50%; */
+}
+
+td {
+    border: 1px solid black;
+    width: 10vw;
+    height: 18vh;
+    text-align: center;
+    color: white;
+    font-size: 30px;
+    font-weight: bold;
+    background-color:white;
+
+  }
+  
+    table{
+        border-collapse: collapse;
+        grid-column: 2;
+        grid-row:2;
+        /* transform: translate(50%, 50%) rotateX(10deg) rotateY(30deg);
+        transform-style: preserve-3d; */
+        transform:
+    perspective(600px)
+    rotateX(30deg);
+    }
+    #hand{
+        width: 10vw;
+        height: 20vh;
+        position: relative;
+        animation: moveImage 4s infinite alternate;
+    }
+    @keyframes moveImage {
+        from {
+          transform: translateX(0);
+        }
+        to {
+          transform: translateX(20px); /* Adjust the value to control the amount of movement */
+        }
+      }
+
+
+  #soldier{
+    background-image: url("../pictures/c1~1.png");
+    background-size:100% ;
+    position: initial;
+    bottom: 1px;
+    background-repeat: no-repeat;
+  }
+  #tura{
+    background-image: url("../pictures/c2~1.png");
+    background-size:100% ;
+    background-repeat: no-repeat;
+  }
+  #horse{
+    background-image: url("../pictures/c3~1.png");
+    background-size:100% ;
+    background-repeat: no-repeat;
+  }
+  #bishop{
+    background-image: url("../pictures/c4~1.png");
+    background-size:100% ;
+    background-repeat: no-repeat;
+  }

@@ -1,0 +1,56 @@
+table {
+    border-collapse: collapse;
+    grid-column: 2;
+    grid-row:2;
+   
+  }
+  td {
+    border: 1px solid black;
+    width: 8vw;
+    height: 15vh;
+    text-align: center;
+    color: black;
+    font-size: 30px;
+    font-weight: bold;
+    background-color: rgb(113 226 170);
+
+  }
+  .empty {
+    background-color: white;
+  }
+  body{
+    display: grid;
+      grid-template-columns:1fr 5fr 1fr;
+      grid-template-rows:1fr 5fr 1fr;
+      align-items: center;
+      justify-items: center;
+      
+  }
+  #door{
+    width: 100vw;
+     height: 100vh;
+     grid-column: 1/span 3;
+     grid-row: 1/span 3;
+     display: none;
+     /* z-index:-1; */
+   }
+   #arrow{
+    display: none;
+    grid-column: 2;
+	justify-items: center;
+     grid-row:2;
+   }
+  /* #header{
+    grid-column:3;
+    grid-row:2;
+    width: 20vw;
+    height: 18vh;
+    } */
+  #background1{
+	z-index: -2;
+	width: 97vw;
+	height: 100vh;
+  grid-column: 1/span 3;
+  grid-row:1/span 3;
+	
+  }

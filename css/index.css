@@ -1,0 +1,69 @@
+body {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+    background-image: url("../pictures/background.png");
+    width: 100vw;
+    height: 100vh;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    justify-items: center;
+}
+
+img {
+    grid-column: 1/span 4;
+    grid-row: 1/span 6;
+    z-index: -1;
+    width: 100%;
+    height: 70%;
+}
+
+#buttons {
+    grid-column: 2/span 2;
+    grid-row: 2;
+    margin: 5dvh;
+}
+
+button {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 210%;
+    width: 8vw;
+    height: 17vh;
+    margin: 1dvh;
+    border-radius: 50%;
+    box-shadow: 0 0 10px 5px rgba(194, 68, 68, 0.5);
+    /* Replace "rgba(255, 0, 0, 0.5)" with your desired color and opacity */
+}
+
+.locked {
+    width: 8vw;
+    height: 17vh;
+    border-radius: 50%;
+    background-image: url("../pictures/5.png");
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.locked {
+    width: 8vw;
+    height: 17vh;
+    border-radius: 50%;
+    background-image: url("../pictures/5.png");
+    background-repeat: no-repeat;
+    background-size: 100%;
+}

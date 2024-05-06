@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>room8</title>
+    <link rel="icon" href="../pictures/escape room.png" />
+    <link rel="stylesheet" href="../css/room8.css">
+</head>
+
+<body>
+
+    <div id="door">
+        <img id="background-image" src="../pictures/18.jpg" alt="Background Image">
+        <img id="arrow" src="../pictures/up-arrow.gif" alt="Arrow Image">
+      </div>
+
+
+
+    <!-- <img id="door" src="../pictures/18.jpg">
+    <img id="arrow" src="../pictures/up-arrow.gif"> -->
+    
+    <img id="header" src="../pictures/escape room.png">
+    <table id="minefield">
+        <tr>
+            <td><button class="b" id="l1"></button></td>
+            <td><button class="b" id="l2"></button></td>
+            <td><button class="b" id="l3"></button></td>
+            <td><button class="b" id="l4"></button></td>
+            <td><button class="b" id="l5"></button></td>
+        </tr>
+        <tr>
+            <td><button class="b" id="l6"></button></td>
+            <td><button class="b" id="l7"></button></td>
+            <td><button class="b" id="l8"></button></td>
+            <td><button class="b" id="l9"></button></td>
+            <td><button class="b" id="l10"></button></td>
+        </tr>
+        <tr>
+            <td><button class="b" id="l11"></button></td>
+            <td><button class="b" id="l12"></button></td>
+            <td><button class="b" id="l13"></button></td>
+            <td><button class="b" id="l14"></button></td>
+            <td><button class="b" id="l15"></button></td>
+        </tr>
+        <tr>
+            <td><button class="b" id="l16"></button></td>
+            <td><button class="b" id="l17"></button></td>
+            <td><button class="b" id="l18"></button></td>
+            <td><button class="b" id="l19"></button></td>
+            <td><button class="b" id="l20"></button></td>
+        </tr>
+        <tr>
+            <td><button class="b" id="l21"></button></td>
+            <td><button class="b" id="l22"></button></td>
+            <td><button class="b" id="l23"></button></td>
+            <td><button class="b" id="l24"></button></td>
+            <td><button class="b" id="l25"></button></td>
+        </tr>
+    </table>
+    <div id="bomb">
+        <img src="../pictures/bomb-48.png" alt="bomb">
+    </div>
+
+    <!--הודעת כישלון-->
+    <div id="id02" class="modal2">
+
+        <div class="modal-content2 animate" action="/action_page.php" method="post">
+
+            <div class="imgcontainer2">
+
+            </div>
+
+            <h2 class="title">game over</h2>
+            <div class="btns">
+                <button class="btn" id="again" onclick="again()">try again</button>
+            </div>
+
+        </div>
+    </div>
+
+    <script src="../js/room8.js"></script>
+</body>
+
+</html>
